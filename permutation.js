@@ -1,11 +1,4 @@
-const events = ["a", "b", "c", "d", "e"];
-const trialCount = 4;
-
-const ans = permutation(events, 3);
-console.log(ans);
-console.log(ans.length);
-
-function permutation(events, trialCount) {
+export function permutation(events, trialCount) {
   const result = [];
 
   if (trialCount === 1) return events;
