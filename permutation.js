@@ -5,7 +5,6 @@ const ans = permutation(events, 3);
 console.log(ans);
 console.log(ans.length);
 
-
 function permutation(events, trialCount) {
   const result = [];
 
@@ -19,19 +18,10 @@ function permutation(events, trialCount) {
 
 function rec(input, events, n, output) {
   if (input.length === n) {
-    console.log("push");
     return output.push(input);
   }
 
-  console.log("recursion is working");
-  console.log(input, events, n, output);
-
-  for (let i = 0; i < 5; i++) {
-    console.log("hello world", i);
-  }
-
   for (let i = 0; i < events.length; i++) {
-    console.log("looping");
     const eventCopy = [...events];
     const cache = eventCopy.splice(i, 1);
     const temp = [...input];
