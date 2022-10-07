@@ -2,7 +2,7 @@ export function permutation(events, trialCount) {
   const result = [];
 
   if (trialCount === 1) return events;
-  if (events.length < trialCount) console.error("invalid input");
+  if (events.length < trialCount) console.error('invalid input');
 
   rec([], events, trialCount, result);
 
