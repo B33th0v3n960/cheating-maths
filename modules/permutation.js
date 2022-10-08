@@ -11,11 +11,11 @@ export function permutation(events, trialCount) {
 
 function rec(input, events, n, output) {
   if (input.length === n) {
-    return output.push(`['${input.join(`' ,'`)}']`)
+    return output.push(`${input.join(' ')}`)
   }
 
   for (let i = 0; i < events.length; i++) {
-    const cache = events.splice(i, 1).join()
+    const cache = events.splice(i, 1).join(' ')
     const temp = [...input]
 
     temp.push(cache)
