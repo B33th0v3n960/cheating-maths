@@ -25,3 +25,14 @@ Permutation function usage (nPr):
 ```
 permutation(n, r)
 ```
+
+## My process
+
+### Built with
+
+- JavaScript
+- Used recursion
+
+## Author
+
+- Author - [Zhou Sun](https://github.com/B33th0v3n960)
