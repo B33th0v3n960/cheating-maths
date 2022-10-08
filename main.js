@@ -1,3 +1,4 @@
+// Here are some example code
 import { permutation } from './modules/permutation.js'
 import { append } from './modules/file.js'
 
